@@ -1,0 +1,62 @@
+[
+  {
+    "img": "https://th.bing.com/th/id/OIP.o_wQeZYERr4z0K9uPQBMsgAAAA?rs=1&pid=ImgDetMain",
+    "title": "Dune",
+    "description": "In the far future, young Paul Atreides and his family become embroiled in a battle for control of the desert planet Arrakis, the universe’s only source of the most valuable substance: spice. Paul’s destiny may change the fate of humanity.",
+    "actors": ["Timothée Chalamet", "Zendaya", "Oscar Isaac"]
+  },
+  {
+    "img": "https://www.sonypictures.ca/sites/canada/files/202…ome_2000x3000_EST_1333x2000_thumbnail-min-min.jpg",
+    "title": "Spider-Man: No Way Home",
+    "description": "Spider-Man’s identity is revealed, putting his superhero responsibilities in conflict with his personal life. To fix it, he turns to Doctor Strange, but things spiral out of control as villains from other universes appear.",
+    "actors": ["Tom Holland", "Zendaya", "Benedict Cumberbatch"]
+  },
+  {
+    "img": "https://media.ginza.se/Images/item_img_verylarge/10874.jpg",
+    "title": "Avatar: The Way of Water",
+    "description": "Jake Sully and Neytiri struggle to protect their family from a new threat that seeks to exploit Pandora’s natural resources once again. As their bond with the water tribes deepens, they prepare for the battle to save their home.",
+    "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+  },
+  {
+    "img": "https://th.bing.com/th/id/OIP.CLyIuHYXKKuAExs9S-itHQAAAA?rs=1&pid=ImgDetMain",
+    "title": "John Wick: Chapter 4",
+    "description": "John Wick uncovers a path to defeating the High Table. But before he can earn his freedom, Wick must face off against new foes with powerful alliances across the globe, risking everything in the ultimate showdown.",
+    "actors": ["Keanu Reeves", "Donnie Yen", "Bill Skarsgård"]
+  },
+  {
+    "img": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2022/02/IMG_5210-scaled.jpeg",
+    "title": "Top Gun: Maverick",
+    "description": "After more than thirty years of service as a top aviator, Pete 'Maverick' Mitchell is still pushing the limits. But as he trains a new generation of pilots for a dangerous mission, he must confront his past and his deepest fears.",
+    "actors": ["Tom Cruise", "Miles Teller", "Jennifer Connelly"]
+  },
+  {
+    "img": "https://otakukart.com/wp-content/uploads/2021/11/Oppenheimer.jpeg",
+    "title": "Oppenheimer",
+    "description": "A look into the life of physicist J. Robert Oppenheimer as he navigates the development of the atomic bomb during World War II. The film delves into his moral struggles and the profound impact of his work on the world.",
+    "actors": ["Cillian Murphy", "Emily Blunt", "Matt Damon"]
+  },
+  {
+    "img": "https://th.bing.com/th/id/OIP.hqnqLoGGgx_k1fYuqd2ROwAAAA?rs=1&pid=ImgDetMain",
+    "title": "Barbie",
+    "description": "In a vibrant and whimsical world, Barbie faces a crisis that leads her to question her existence. She embarks on a journey of self-discovery in both her fantasy world and the real world, learning what it truly means to be herself.",
+    "actors": ["Margot Robbie", "Ryan Gosling", "Simu Liu"]
+  },
+  {
+    "img": "https://www.gamespot.com/a/uploads/original/1813/18138562/4139175-fwvrezhwaaajvzn.jpg",
+    "title": "Mission: Impossible – Dead Reckoning Part One",
+    "description": "Ethan Hunt and his team are tasked with stopping a powerful new enemy that threatens global security. With high-stakes action and relentless challenges, they face the ultimate test of loyalty and trust.",
+    "actors": ["Tom Cruise", "Rebecca Ferguson", "Hayley Atwell"]
+  },
+  {
+    "img": "https://th.bing.com/th/id/OIP.LGRFADJPEN11vTLwX4_IZQHaNK?rs=1&pid=ImgDetMain",
+    "title": "Black Panther: Wakanda Forever",
+    "description": "Following King T'Challa's death, the leaders of Wakanda fight to protect their nation from invading forces, while grappling with their grief and finding a new path forward. A powerful tale of resilience, legacy, and hope.",
+    "actors": ["Letitia Wright", "Angela Bassett", "Tenoch Huerta"]
+  },
+  {
+    "img": "https://th.bing.com/th/id/OIP.tjG0d6LA5eXZaG55nRDH1wHaMd?rs=1&pid=ImgDetMain",
+    "title": "The Batman",
+    "description": "In his second year of fighting crime, Batman uncovers a web of corruption in Gotham City that ties back to his own family while facing a dangerous serial killer known as The Riddler. A darker and grittier take on the iconic hero.",
+    "actors": ["Robert Pattinson", "Zoë Kravitz", "Paul Dano"]
+  }
+]
