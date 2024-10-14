@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMovies } from "../redux/features/movieSlice";
 import { Link } from "react-router-dom";
+import { MdFavoriteBorder } from "react-icons/md";
+import { MdOutlineFavorite } from "react-icons/md";
 
 export default function MoviesList() {
+  const [toggleFav, setToggleFav] = useState("false");
+
   const dispatch = useDispatch();
   const { movies, status, error } = useSelector((state) => state.movies);
 
@@ -21,6 +25,10 @@ export default function MoviesList() {
     return <p>Error: {error}</p>;
   }
 
+  function handleToggle() {
+    setToggleFav(!toggleFav);
+  }
+
   return (
     <div className="bg-gray-800 text-white p-5  shadow-lg">
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
@@ -34,9 +42,23 @@ export default function MoviesList() {
               alt={movie.title}
               className="w-full h-48 object-cover rounded-lg mb-2"
             />
+
             <h2 className="text-xl font-semibold mb-1">
               {movie.title} ({movie.year})
             </h2>
+
+            <button
+              className="flex border border-r-2 border-[#22cf22] rounded-full pl-4 m-2 items-center"
+              onClick={handleToggle} // Anropar klickfunktionen
+            >
+              Add to favorites
+              {toggleFav ? (
+                <MdFavoriteBorder className="w-[40px]" />
+              ) : (
+                <MdOutlineFavorite className="w-[40px]" />
+              )}
+            </button>
+
             <p className="text-gray-300 text-sm mb-2 flex flex-col">
               <strong>Description:</strong> {movie.description}
             </p>

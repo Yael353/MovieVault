@@ -30,32 +30,36 @@ export default function RolingFooter() {
   }, [movies]);
 
   return (
-    <div className="bg-gray-800 text-white p-5 shadow-lg mt-6 w-full">
+    <div
+      className="bg-gray-800 text-white p-5 mt-6 w-full border-t-2 shadow-lg"
+      style={{ borderTopColor: "#22cf22" }}
+    >
       <h2 className="text-2xl font-bold mb-4">More movies you might enjoy</h2>
-      <div
-        ref={scrollRef}
-        className="flex overflow-x-auto space-x-4 scrollbar-hide"
-        style={{ width: "100%" }}
-      >
-        {/* Duplicera innehållet för att möjliggöra loopning */}
-        {[...movies, ...movies].map((movie, index) => (
-          <div
-            key={index}
-            className="bg-gray-700 p-4 rounded-lg flex-shrink-0"
-            style={{ width: "320px", height: "400px" }} // Sätter fast bredd och höjd
-          >
-            <Link to={`/movie/${movie.id}`}>
-              <img
-                src={movie.img}
-                alt={movie.title}
-                className="w-full h-72 object-cover rounded-lg mb-2"
-              />
-              <h3 className="text-xl font-semibold mb-1">
-                {movie.title} ({movie.year})
-              </h3>
-            </Link>
-          </div>
-        ))}
+
+      <div className="overflow-hidden">
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-auto space-x-4 scrollbar-hide"
+        >
+          {[...movies, ...movies].map((movie, index) => (
+            <div
+              key={index}
+              className="bg-gray-700 p-4 rounded-lg flex-shrink-0"
+              style={{ width: "320px", height: "400px" }}
+            >
+              <Link to={`/movie/${movie.id}`}>
+                <img
+                  src={movie.img}
+                  alt={movie.title}
+                  className="w-full h-72 object-cover rounded-lg mb-2"
+                />
+                <h3 className="text-xl font-semibold mb-1">
+                  {movie.title} ({movie.year})
+                </h3>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

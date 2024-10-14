@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../components/searchBar.jsx";
+import SearchBar from "../components/SearchBar.jsx";
 import MoviesList from "../components/MoviesList";
 import Header from "../components/Header.jsx";
 import Navbar from "../components/Navbar.jsx";
