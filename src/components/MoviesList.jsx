@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMovies } from "../redux/features/movieSlice";
+import { Link } from "react-router-dom";
 
 export default function MoviesList() {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ export default function MoviesList() {
     <div className="bg-gray-800 text-white p-5  shadow-lg">
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
         {movies.map((movie, index) => (
-          <div
+          <li
             key={index}
             className="bg-gray-700 p-4 rounded-lg flex flex-col items-center transition-transform duration-200 hover:scale-105 shadow-md shadow-[#22cf22] m-1"
           >
@@ -43,7 +44,13 @@ export default function MoviesList() {
             <p className="text-gray-400 text-sm">
               <strong>Actors:</strong> {movie.actors.join(", ")}
             </p>
-          </div>
+            <Link
+              to={`/movie/${movie.id}`}
+              className="text-blue-500 hover:underline mt-2"
+            >
+              View Details
+            </Link>
+          </li>
         ))}
       </ul>
     </div>

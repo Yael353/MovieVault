@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "img": "https://th.bing.com/th/id/OIP.o_wQeZYERr4z0K9uPQBMsgAAAA?rs=1&pid=ImgDetMain",
     "title": "Dune",
     "year": "2021",
@@ -7,6 +8,7 @@
     "actors": ["Timothée Chalamet", "Zendaya", "Oscar Isaac"]
   },
   {
+    "id": 1,
     "img": "https://m.media-amazon.com/images/I/81y0foYjoFL._AC_UF1000,1000_QL80_.jpg",
     "title": "Spider-Man: No Way Home",
     "year": "2021",
@@ -14,6 +16,7 @@
     "actors": ["Tom Holland", "Zendaya", "Benedict Cumberbatch"]
   },
   {
+    "id": 2,
     "img": "https://media.ginza.se/Images/item_img_verylarge/10874.jpg",
     "title": "Avatar: The Way of Water",
     "year": "2022",
@@ -21,6 +24,7 @@
     "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
   },
   {
+    "id": 3,
     "img": "https://th.bing.com/th/id/OIP.CLyIuHYXKKuAExs9S-itHQAAAA?rs=1&pid=ImgDetMain",
     "title": "John Wick: Chapter 4",
     "year": "2024",
@@ -28,6 +32,7 @@
     "actors": ["Keanu Reeves", "Donnie Yen", "Bill Skarsgård"]
   },
   {
+    "id": 4,
     "img": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2022/02/IMG_5210-scaled.jpeg",
     "title": "Top Gun: Maverick",
     "year": "2022",
@@ -35,6 +40,7 @@
     "actors": ["Tom Cruise", "Miles Teller", "Jennifer Connelly"]
   },
   {
+    "id": 5,
     "img": "https://otakukart.com/wp-content/uploads/2021/11/Oppenheimer.jpeg",
     "title": "Oppenheimer",
     "year": "2022",
@@ -42,6 +48,7 @@
     "actors": ["Cillian Murphy", "Emily Blunt", "Matt Damon"]
   },
   {
+    "id": 6,
     "img": "https://th.bing.com/th/id/OIP.hqnqLoGGgx_k1fYuqd2ROwAAAA?rs=1&pid=ImgDetMain",
     "title": "Barbie",
     "year": "2023",
@@ -49,6 +56,7 @@
     "actors": ["Margot Robbie", "Ryan Gosling", "Simu Liu"]
   },
   {
+    "id": 7,
     "img": "https://www.gamespot.com/a/uploads/original/1813/18138562/4139175-fwvrezhwaaajvzn.jpg",
     "title": "Mission: Impossible – Dead Reckoning Part One",
     "year": "2023",
@@ -56,6 +64,7 @@
     "actors": ["Tom Cruise", "Rebecca Ferguson", "Hayley Atwell"]
   },
   {
+    "id": 8,
     "img": "https://th.bing.com/th/id/OIP.LGRFADJPEN11vTLwX4_IZQHaNK?rs=1&pid=ImgDetMain",
     "title": "Black Panther: Wakanda Forever",
     "year": "2022",
@@ -63,6 +72,7 @@
     "actors": ["Letitia Wright", "Angela Bassett", "Tenoch Huerta"]
   },
   {
+    "id": 9,
     "img": "https://th.bing.com/th/id/OIP.tjG0d6LA5eXZaG55nRDH1wHaMd?rs=1&pid=ImgDetMain",
     "title": "The Batman",
     "year": "2022",
