@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function searchBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,7 +23,7 @@ export default function searchBar() {
     }
   }
   return (
-    <div className="flex flex-col items-center pt-3">
+    <div className="flex flex-col items-center pt-3 bg-gray-800">
       {/* Sökfält */}
       <input
         type="text"
@@ -35,22 +36,26 @@ export default function searchBar() {
       {moviesList.length > 0 && (
         <ul className="w-[30%] space-y-4">
           {moviesList.map((movie) => (
-            <li
-              key={movie.id}
-              className="border-b pb-4 flex flex-row justify-between hover:scale-105"
-            >
-              {/* Titel och år */}
-              <h3 className="text-xl font-semibold">
-                {movie.title}{" "}
-                <span className="text-gray-500">({movie.year})</span>
-              </h3>
-              {/* Filmbild */}
-              <img
-                src={movie.img}
-                alt={movie.title}
-                className=" h-auto mt-2 rounded-lg w-14"
-              />
-            </li>
+            <Link to={`/movie/${movie.id}`} key={movie.id} className="block">
+              <li
+                key={movie.id}
+                className="border-b pb-4 flex flex-row justify-between hover:scale-105"
+              >
+                {/* Titel och år */}
+                <h3 className="text-xl text-white font-bold">
+                  {movie.title}{" "}
+                  <span className="text-gray-500 font-semibold">
+                    ({movie.year})
+                  </span>
+                </h3>
+                {/* Filmbild */}
+                <img
+                  src={movie.img}
+                  alt={movie.title}
+                  className=" h-auto mt-2 rounded-lg w-14"
+                />
+              </li>
+            </Link>
           ))}
         </ul>
       )}

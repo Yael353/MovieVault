@@ -8,3 +8,12 @@
     /* Yttre neonglöd */ 0 0 15px #22ff22,
     /* Lite ljusare grön för ytterligare glöd */ 4px 4px 0 #000; /* Svart skugga för att ge djup */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* För Chrome, Safari och Edge */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE och Edge */
+  scrollbar-width: none; /* Firefox */
+}
