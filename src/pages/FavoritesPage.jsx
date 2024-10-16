@@ -7,7 +7,7 @@ import Header from "../components/Header.jsx";
 
 export default function FavoritesPage() {
   return (
-    <div className="bg-gray-800 h-screen">
+    <div className="bg-gray-800 min-h-screen">
       <Header />
       <Navbar />
       <SearchBar />

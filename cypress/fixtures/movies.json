@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Movie Title 1",
+    "release_date": "2022",
+    "backdrop_path": "/path-to-backdrop1.jpg",
+    "overview": "This is the overview of Movie 1."
+  },
+  {
+    "id": 2,
+    "title": "Movie Title 2",
+    "release_date": "2021",
+    "backdrop_path": "/path-to-backdrop2.jpg",
+    "overview": "This is the overview of Movie 2."
+  }
+]

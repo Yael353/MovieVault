@@ -8,7 +8,7 @@ export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   try {
     // Använd 'fetch' för att göra ett GET-anrop till OMDb API
     const response = await axios.get(
-      `https://api.themoviedb.org/3/discover/movie`,
+      `https://api.themoviedb.org/3/discover/movie?page=2&limits=18`,
       {
         params: {
           api_key: API_KEY,

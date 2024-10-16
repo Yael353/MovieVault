@@ -26,7 +26,7 @@ export default function searchBar() {
     setMoviesList([]);
   }
   return (
-    <div className="flex flex-col items-center pt-3 bg-gray-800">
+    <div className="flex flex-col items-center pt-10 bg-gray-800">
       <input
         type="text"
         placeholder="Search the vault"

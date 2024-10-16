@@ -15,7 +15,7 @@ export default function Navbar() {
         alt="MovieVault Logo"
         className="w-[200px] h-[200px] p-4 rounded-full"
       />
-      <div className="flex items-center">
+      <div className="flex items-center mx-10">
         <button
           onClick={toggleDropdown}
           className="text-white text-4xl font-bold py-2 px-4 rounded hover:bg-gray-700 transition duration-300 mr-4"
@@ -23,14 +23,14 @@ export default function Navbar() {
           Menu
         </button>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-5">
         <Link to="/" className="ml-auto">
-          <button className="bg-white text-[#22cf22] font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">
+          <button className="bg-white text-[#22cf22] font-bold p-5 text-3xl rounded hover:bg-green-600 transition duration-300">
             Home
           </button>
         </Link>
         <Link to="/favorites" className="ml-auto">
-          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">
+          <button className="bg-green-500 text-white font-bold p-5 text-3xl rounded hover:bg-green-600 transition duration-300">
             Favorites
           </button>
         </Link>

@@ -45,8 +45,9 @@ export default function MoviesList() {
 
   return (
     <div className="bg-gray-800 text-white p-5  shadow-lg">
+      <h1 className="text-5xl flex justify-center py-10">Movies</h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
-        {movies.slice(0, 19).map((movie) => (
+        {movies.map((movie) => (
           <li
             key={movie.id}
             className="bg-gray-700 p-4 rounded-lg flex flex-col items-center transition-transform duration-200 hover:scale-105 shadow-md shadow-[#22cf22] m-1"
