@@ -22,9 +22,11 @@ export default function searchBar() {
       setMoviesList([]);
     }
   }
+  function handleClick() {
+    setMoviesList([]);
+  }
   return (
     <div className="flex flex-col items-center pt-3 bg-gray-800">
-      {/* Sökfält */}
       <input
         type="text"
         placeholder="Search the vault"
@@ -32,23 +34,26 @@ export default function searchBar() {
         onChange={handleChange}
       />
 
-      {/* Filmlistan */}
       {moviesList.length > 0 && (
         <ul className="w-[30%] space-y-4">
           {moviesList.map((movie) => (
-            <Link to={`/movie/${movie.id}`} key={movie.id} className="block">
+            <Link
+              to={`/movie/${movie.id}`}
+              key={movie.id}
+              className="block"
+              onClick={handleClick}
+            >
               <li
                 key={movie.id}
                 className="border-b pb-4 flex flex-row justify-between hover:scale-105"
               >
-                {/* Titel och år */}
                 <h3 className="text-xl text-white font-bold">
                   {movie.title}{" "}
                   <span className="text-gray-500 font-semibold">
                     ({movie.year})
                   </span>
                 </h3>
-                {/* Filmbild */}
+
                 <img
                   src={movie.img}
                   alt={movie.title}

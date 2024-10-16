@@ -4,7 +4,7 @@
   color: #22cf22; /* Retrogrön färg */
   font-family: "Press Start 2P", cursive; /* Använd retrotypsnitt */
   font-size: 2.5rem; /* Justera storlek efter behov */
-  text-shadow: 0 0 5px #22cf22, /* Inre neonglöd */ 0 0 10px #22cf22,
+  text-shadow: 0 0 2.5px #22cf22, /* Inre neonglöd */ 0 0 5px #22cf22,
     /* Yttre neonglöd */ 0 0 15px #22ff22,
     /* Lite ljusare grön för ytterligare glöd */ 4px 4px 0 #000; /* Svart skugga för att ge djup */
 }

@@ -7,7 +7,7 @@ import RolingFooter from "../components/RolingFooter.jsx";
 
 export default function Home() {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 min-h-screen">
       <Header />
       <Navbar />
       <SearchBar />

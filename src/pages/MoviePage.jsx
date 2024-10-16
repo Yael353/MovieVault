@@ -29,13 +29,13 @@ export default function MoviePage() {
   const movie = movies.find((movie) => movie.id === parseInt(id, 10));
 
   return (
-    <>
+    <div>
       <Header />
       <Navbar />
       <SearchBar />
       <div className="bg-gray-800">
         {movie ? <MovieDetails movie={movie} /> : <div>Movie not found</div>}
       </div>
-    </>
+    </div>
   );
 }
