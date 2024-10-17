@@ -10,56 +10,25 @@ Follow these steps to install and run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Yael353/movieVault.git
-   ```
-2. Navigate to the project directory:
-   cd movieVault
-   Install dependencies:
-   npm install
-
-Start the development server:
-npm run dev
-
-Open your browser and go to http://localhost:5371 to see the application.
-
-Tack för informationen! Här är en uppdaterad README-fil baserat på det du har gett. Jag har också inkluderat information om Cypress och en länk för installation av Cypress.
-
-README.md
-markdown
-Copy code
-
-# MovieVault
-
-## Description
-
-MovieVault is your go-to hub for discovering and managing movies. Here, you can browse a vast selection of films, easily add or remove favorites, and explore detailed information for your next movie night.
-
-## Installation
-
-Follow these steps to install and run the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/movieVault.git
+   git clone
+   https://github.com/your-username/movieVault.git
    Navigate to the project directory:
    ```
 
 cd movieVault
 Install dependencies:
 
-bash
-Copy code
+copy code
 npm install
 Start the development server:
 
-bash
-Copy code
 npm run dev
-Open your browser and go to http://localhost:3000 to see the application.
+Open your browser and go to http://localhost:5173 to see the application.
 
 ## Cypress Installation
 
 Cypress is included for end-to-end testing. To install it, run the following command:
+
 npm install cypress
 
 To open Cypress, use:
