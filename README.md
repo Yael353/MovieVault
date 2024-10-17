@@ -9,11 +9,14 @@ MovieVault is your go-to hub for discovering and managing movies. Here, you can 
 Follow these steps to install and run the project locally:
 
 1. Clone the repository:
-   ```bash
+
    git clone
+
+   ```bash
    https://github.com/your-username/movieVault.git
-   Navigate to the project directory:
    ```
+
+   Navigate to the project directory:
 
 cd movieVault
 Install dependencies:
