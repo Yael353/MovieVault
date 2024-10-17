@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { removeFavorite } from "../redux/features/movieSlice"; // Importera removeFavorite
+import { removeFavorite } from "../redux/features/movieSlice";
 
 export default function Favorites() {
   const dispatch = useDispatch();

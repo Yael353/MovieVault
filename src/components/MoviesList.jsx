@@ -29,19 +29,17 @@ export default function MoviesList() {
     return <p>Error: {error}</p>;
   }
 
-  // Kontrollera om filmen är en favorit
-  const isFavorite = (movieId) => {
+  function isFavorite(movieId) {
     return favoriteMovies.some((favorite) => favorite.id === movieId);
-  };
+  }
 
-  // Hantera favorit-toggle
-  const handleToggle = (movie) => {
+  function handleToggle(movie) {
     if (isFavorite(movie.id)) {
-      dispatch(removeFavorite(movie.id)); // Ta bort från favoriter om den redan är favorit
+      dispatch(removeFavorite(movie.id));
     } else {
-      dispatch(addFavorite(movie)); // Lägg till som favorit om den inte är favorit
+      dispatch(addFavorite(movie));
     }
-  };
+  }
 
   return (
     <div className="bg-gray-800 text-white p-5 shadow-lg">

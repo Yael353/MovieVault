@@ -9,18 +9,15 @@ export default function RolingFooter() {
   useEffect(() => {
     const scrollInterval = setInterval(() => {
       if (scrollRef.current) {
-        // Scrolla 800px åt vänster
         scrollRef.current.scrollBy({
           left: 800,
           behavior: "smooth",
         });
 
-        // Kolla om vi är nära slutet av rullningsområdet
         if (
           scrollRef.current.scrollLeft + scrollRef.current.offsetWidth >=
           scrollRef.current.scrollWidth
         ) {
-          // Återställ till början för att skapa en loopande effekt
           scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
         }
       }
@@ -45,13 +42,13 @@ export default function RolingFooter() {
             <div
               key={index}
               className="bg-gray-700 p-4 rounded-lg flex-shrink-0"
-              style={{ width: "240px", height: "360px" }} // Mindre bredd på små skärmar
+              style={{ width: "240px", height: "360px" }}
             >
               <Link to={`/movie/${movie.id}`}>
                 <img
                   src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                   alt={movie.title}
-                  className="w-full h-56 object-cover rounded-lg mb-2" // Mindre höjd
+                  className="w-full h-56 object-cover rounded-lg mb-2"
                 />
                 <h3 className="text-lg md:text-xl font-semibold mb-1">
                   {movie.title} ({movie.release_date})

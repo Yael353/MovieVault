@@ -1,12 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// VITE_API_KEY kommer från din .env-fil
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   try {
-    // Använd 'fetch' för att göra ett GET-anrop till OMDb API
     const response = await axios.get(
       `https://api.themoviedb.org/3/discover/movie?page=2&limits=18`,
       {
@@ -18,15 +16,15 @@ export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
 
     console.log("Fetched movie data:", response.data);
     return response.data.results;
-    // Kontrollera om API-svaret är giltigt
+
     if (data.Response === "False") {
-      throw new Error(data.Error); // Kasta ett fel om det är ett ogiltigt svar
+      throw new Error(data.Error);
     }
 
-    return data.Search; // Returnera filmerna från sökningen
+    return data.Search;
   } catch (error) {
     console.error("Error fetching movies:", error.message);
-    throw error; // Kasta vidare felet för att Redux ska hantera det
+    throw error;
   }
 });
 
