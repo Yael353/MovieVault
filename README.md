@@ -12,12 +12,13 @@ Follow these steps to install and run the project locally:
 
    git clone
 
-   `bash`
+   ````bash`
    https://github.com/your-username/movieVault.git
 
    ```
-
    Navigate to the project directory:
+
+
    ```
 
 cd movieVault
