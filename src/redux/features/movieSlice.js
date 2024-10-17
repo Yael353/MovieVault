@@ -4,28 +4,23 @@ import axios from "axios";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
-  try {
-    const response = await axios.get(
-      `https://api.themoviedb.org/3/discover/movie?page=2&limits=18`,
-      {
-        params: {
-          api_key: API_KEY,
-        },
-      }
-    );
+  const response = await fetch(
+    `https://api.themoviedb.org/3/discover/movie?page=2&limits=18&api_key=${API_KEY}`
+  );
 
-    console.log("Fetched movie data:", response.data);
-    return response.data.results;
-
-    if (data.Response === "False") {
-      throw new Error(data.Error);
-    }
-
-    return data.Search;
-  } catch (error) {
-    console.error("Error fetching movies:", error.message);
-    throw error;
+  if (!response.ok) {
+    throw new Error("Något gick fel med att hämta filmerna");
   }
+
+  const data = await response.json();
+
+  console.log("Fetched movie data:", data);
+
+  if (data.Response === "False") {
+    throw new Error(data.Error);
+  }
+
+  return data.results;
 });
 
 const movieSlice = createSlice({
