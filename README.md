@@ -10,18 +10,14 @@ Follow these steps to install and run the project locally:
 
 1. Clone the repository:
 
-   git clone
-
    ````bash`
-   https://github.com/your-username/movieVault.git
+   git clone "https://github.com/your-username/movieVault.git"
 
    ```
    Navigate to the project directory:
-
-
+   cd movieVault
    ```
 
-cd movieVault
 Install dependencies:
 
 copy code
