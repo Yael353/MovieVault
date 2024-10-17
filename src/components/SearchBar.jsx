@@ -48,14 +48,14 @@ export default function searchBar() {
                 className="border-b pb-4 flex flex-row justify-between hover:scale-105"
               >
                 <h3 className="text-xl text-white font-bold">
-                  {movie.title}{" "}
+                  {movie.title}
                   <span className="text-gray-500 font-semibold">
-                    ({movie.year})
+                    ({movie.release_date})
                   </span>
                 </h3>
 
                 <img
-                  src={movie.img}
+                  src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                   alt={movie.title}
                   className=" h-auto mt-2 rounded-lg w-14"
                 />

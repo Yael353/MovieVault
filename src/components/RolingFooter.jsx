@@ -31,7 +31,7 @@ export default function RolingFooter() {
 
   return (
     <div
-      className="bg-gray-800 text-white p-5  w-full border-t-2 shadow-lg"
+      className="bg-gray-800 text-white p-5 w-full border-t-2 shadow-lg"
       style={{ borderTopColor: "#22cf22" }}
     >
       <h2 className="text-2xl font-bold mb-4">More movies you might enjoy</h2>
@@ -45,15 +45,15 @@ export default function RolingFooter() {
             <div
               key={index}
               className="bg-gray-700 p-4 rounded-lg flex-shrink-0"
-              style={{ width: "320px", height: "400px" }}
+              style={{ width: "240px", height: "360px" }} // Mindre bredd på små skärmar
             >
               <Link to={`/movie/${movie.id}`}>
                 <img
                   src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                   alt={movie.title}
-                  className="w-full h-72 object-cover rounded-lg mb-2"
+                  className="w-full h-56 object-cover rounded-lg mb-2" // Mindre höjd
                 />
-                <h3 className="text-xl font-semibold mb-1">
+                <h3 className="text-lg md:text-xl font-semibold mb-1">
                   {movie.title} ({movie.release_date})
                 </h3>
               </Link>

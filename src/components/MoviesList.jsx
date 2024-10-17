@@ -44,9 +44,9 @@ export default function MoviesList() {
   };
 
   return (
-    <div className="bg-gray-800 text-white p-5  shadow-lg">
-      <h1 className="text-5xl flex justify-center py-10">Movies</h1>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
+    <div className="bg-gray-800 text-white p-5 shadow-lg">
+      <h1 className="text-3xl md:text-5xl flex justify-center py-10">Movies</h1>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
         {movies.map((movie) => (
           <li
             key={movie.id}
@@ -58,31 +58,28 @@ export default function MoviesList() {
               className="w-full h-48 object-cover rounded-lg mb-2"
             />
 
-            <h2 className="text-xl font-semibold mb-1">
+            <h2 className="text-lg md:text-xl font-semibold mb-1 text-center">
               {movie.title} ({movie.release_date})
             </h2>
 
             <button
               className="flex border border-r-2 border-[#22cf22] rounded-full pl-4 m-2 justify-center items-center"
-              onClick={() => handleToggle(movie)} // Anropar klickfunktionen
+              onClick={() => handleToggle(movie)}
             >
               {isFavorite(movie.id)
                 ? "Remove from Favorite"
                 : "Add to Favorite"}
               {isFavorite(movie.id) ? (
-                <MdOutlineFavorite className="w-[40px]" />
+                <MdOutlineFavorite className="w-[30px] md:w-[40px]" />
               ) : (
-                <MdFavoriteBorder className="w-[40px]" />
+                <MdFavoriteBorder className="w-[30px] md:w-[40px]" />
               )}
             </button>
 
-            <p className="text-gray-300 text-sm mb-2 flex flex-col">
+            <p className="text-gray-300 text-sm mb-2 text-center">
               <strong>Description:</strong> {movie.overview}
             </p>
 
-            {/* <p className="text-gray-400 text-sm">
-              <strong>Actors:</strong> {movie.actors.join(", ")}
-            </p> */}
             <Link
               to={`/movie/${movie.id}`}
               className="text-blue-500 hover:underline mt-2"
