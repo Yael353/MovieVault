@@ -12,30 +12,44 @@ Follow these steps to install and run the project locally:
 
    git clone
 
-   ```bash
+   `bash`
    https://github.com/your-username/movieVault.git
+
    ```
 
    Navigate to the project directory:
+   ```
 
 cd movieVault
 Install dependencies:
 
 copy code
+
+```bash
 npm install
+```
+
 Start the development server:
 
+```bash
 npm run dev
+```
+
 Open your browser and go to http://localhost:5173 to see the application.
 
 ## Cypress Installation
 
 Cypress is included for end-to-end testing. To install it, run the following command:
 
+```bash
 npm install cypress
+```
 
 To open Cypress, use:
+
+```bash
 npx cypress open
+```
 
 ## Usage
 
@@ -57,7 +71,15 @@ react-icons: For adding icons to the application.
 
 Contributions are always welcome! If you'd like to contribute to the project, please follow these steps:
 Fork the repository.
-Create a new branch (git checkout -b new-feature).
-Make your changes and commit (git commit -m 'Add new feature').
+Create a new branch
+
+```bash
+(git checkout -b new-feature).
+```
+
+Make your changes and commit
+`bash
+    git commit -m 'Add new feature'
+    `
 Push to the branch (git push origin new-feature).
 Create a pull request.
