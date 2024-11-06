@@ -15,6 +15,7 @@ export default function MoviesList() {
     (state) => state.movies
   );
 
+  //Hämtar filmer när komponenten ladas
   useEffect(() => {
     if (status === "idle") {
       dispatch(fetchMovies());

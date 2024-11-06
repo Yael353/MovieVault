@@ -5,9 +5,12 @@ import { removeFavorite } from "../redux/features/movieSlice";
 
 export default function Favorites() {
   const dispatch = useDispatch();
+
+  // hämtar favoriter från store
   const favoriteMovies = useSelector((state) => state.movies.favoriteMovies);
   console.log(favoriteMovies);
 
+  //Meddelande som visas när favoriter är tomt
   if (favoriteMovies.length === 0) {
     return <p className="text-white">You have no favorite movies yet.</p>;
   }

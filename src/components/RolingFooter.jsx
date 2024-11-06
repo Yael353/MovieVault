@@ -6,14 +6,17 @@ export default function RolingFooter() {
   const { movies } = useSelector((state) => state.movies);
   const scrollRef = useRef(null);
 
+  //Scrollfunktion
   useEffect(() => {
     const scrollInterval = setInterval(() => {
+      // Scrolla åt vänster med en mjuk övergång
       if (scrollRef.current) {
         scrollRef.current.scrollBy({
           left: 800,
           behavior: "smooth",
         });
 
+        //Börja om scrollningen om den nåt sitt slut.
         if (
           scrollRef.current.scrollLeft + scrollRef.current.offsetWidth >=
           scrollRef.current.scrollWidth

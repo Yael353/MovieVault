@@ -9,10 +9,12 @@ export default function searchBar() {
 
   const { movies } = useSelector((state) => state.movies);
 
+  //onchange funktion för att hantera när förändring i searchbaren sker.
   function handleChange(e) {
     const term = e.target.value;
     setSearchTerm(term);
 
+    // Filtrerar filmer baserat på titel
     if (term.trim() !== "") {
       const filteredMovies = movies.filter((movie) =>
         movie.title.toLowerCase().includes(term.toLowerCase())
@@ -33,7 +35,6 @@ export default function searchBar() {
         className="w-[30%] h-12 rounded-full p-4 text-gray-800 text-2xl font-bold mb-4"
         onChange={handleChange}
       />
-
       {moviesList.length > 0 && (
         <ul className="w-[30%] space-y-4">
           {moviesList.map((movie) => (

@@ -18,11 +18,22 @@ export default function MovieDetails({ movie }) {
     return favoriteMovies.some((favorite) => favorite.id === movieId);
   };
 
+  //Togglefunktion för att spara/ta bort favoriter
   const handleToggle = (movie) => {
     if (isFavorite(movie.id)) {
       dispatch(removeFavorite(movie.id));
+      window.dataLayer.push({
+        event: "remove_favorite",
+        movieTitle: movie.title,
+        movieId: movie.id,
+      });
     } else {
       dispatch(addFavorite(movie));
+      window.dataLayer.push({
+        event: "add_favorite",
+        movieTitle: movie.title,
+        movieId: movie.id,
+      });
     }
   };
   return (
